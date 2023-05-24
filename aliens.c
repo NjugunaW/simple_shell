@@ -74,7 +74,7 @@ int setAlias(exec_info *inf_ptr, char *string)
 /*Function increments 'ptrs' to next char and check whether it is NULL*/
 	if (!*++ptrs)
 		return (ali2str(inf_ptr, string));
-/*'ali2str' function deletes exisitng alias with same name from 'inf_ptr->alias'*/
+/*'ali2str' function del exisitng alias with same name from 'inf_ptr->alias'*/
 /*fnctn then appends 'string' to the end of 'inf_ptr->alias'*/
 	ali2str(inf_ptr, string);
 	return (nodeAppend(&(inf_ptr->alias), string, 0) == NULL);
